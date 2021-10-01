@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Chat App</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="centered-form">
+        <div class="centered-form__box">
+            <h1>Join Chat</h1>
+            <form action="/chat.html">
+                <label>Display Name</label>
+                <input type="text" name="username" value="" placeholder="Display Name" required>
+                <label>Room</label>
+                <input type="text" name="room" value="" placeholder="Room Name">
+
+                <button>Join</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.1/qs.min.js"
+        integrity="sha512-aTKlYRb1QfU1jlF3k+aS4AqTpnTXci4R79mkdie/bp6Xm51O5O3ESAYhvg6zoicj/PD6VYY0XrYwsWLcvGiKZQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/socket.io/socket.io.js"></script>
+</html>
