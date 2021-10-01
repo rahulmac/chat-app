@@ -57,6 +57,7 @@ socket.on('messageReceived', (message) => {
 })
 
 socket.on('roomData', ({room, users}) => {
+    document.querySelector('#sidebar').innerHTML = ''
     const html = Mustache.render($sidebarTemplate, {
         room,
         users
